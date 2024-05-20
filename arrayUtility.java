@@ -24,4 +24,38 @@ public class arrayUtility {
         System.out.println();
 
     }
+
+
+    //2d array utility
+
+    public static int[][] input2DArray(){
+      System.out.println("enter number of rows");
+      Scanner input=new Scanner(System.in);
+      int row= input.nextInt();
+      System.out.println("enter colomn ");
+      int col=input.nextInt();
+      int[][] nums=new int[row][col];
+
+
+      int i=0;
+      while(i<row){
+        int j=0;
+        while (j<col) {
+            System.out.println("plese enter rows"+i+1+"colom"+j+1);
+           nums[i][j]=input.nextInt();
+            j++;
+            
+        }
+        i++;
+      }
+      return nums;
+
+    }
 }
+
+
+
+
+
+
+
